@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.charts.VirtualSensorsAdminPanelFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.github.stefanodp91.android.circularseekbar.CircularSeekBar
+            android:id="@+id/seek"
+            android:layout_width="264dp"
+            android:layout_height="244dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="171dp"
+            app:cs_arcRadius="80dp"
+            app:cs_text_progress="true"
+            app:cs_text_size="20dp"
+            app:cs_progressWidth="10dp"
+            app:cs_color_list="@color/green_900"
+            app:cs_text_color="@color/indigo_600"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="108dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginBottom="61dp"
+            android:text="Apply"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="257dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginEnd="34dp"
+            android:layout_marginRight="34dp"
+            android:layout_marginBottom="160dp"
+            android:gravity="center|center_vertical"
+            android:text="Voltage"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/seek" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
